@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+ 
+项目代码托管功能顺序图
+用户创建仓库代码项目，发送请求到github，github完成创建返回用户，用户分享代码托管到github，用户编写代码后，由github使用代码。用户可以请求保存，修改，删除代码，由github完成代码托管。
+ 
+版本管理功能顺序图
+用户发送创建项目请求给github，由github创建完成，返回到用户，用户可以请求版本管理，由github完成版本升级并返回用户。用户可以分享版本到github
+ 
+代码查找功能顺序图
+由用户发起搜索到github，github搜索用户搜索内容并返回搜索结果。用户可以保存或下载个人账户的内容
+ 
+项目代码托管功能活动图
+用户输入账户信息，服务器验证信息，如果输入错误，能再输入3次，若验证成功，可以选择修改、删除、上传文件操作，选择操作后由服务器执行并更新文件
+ 
+版本管理功能活动图
 
-You can use the [editor on GitHub](https://github.com/zhaowuhuo/qizhongzuoye/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhaowuhuo/qizhongzuoye/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+用户输入账户，由服务器验证，若错误则返回重新输入，若成功则可以选择上传新数据，修改数据，删除数据。执行操作后，由服务器执行并更新数据
+ 
+代码查找功能活动图
+用户发起搜索请求，后搜索仓库，再转到文件搜索代码，若搜索成功则返回结果，若搜索失败返回搜索失败，并请求重新输入搜索内容
